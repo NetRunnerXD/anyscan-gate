@@ -1,0 +1,130 @@
+{
+ "cq500_118_ich_slice.dcm": {
+  "source": "CQ500 (Chilamkurthy et al., Lancet 2018; qure.ai) via HF neurosentry/cq500 \u2013 CC BY-NC-SA 4.0 \u2013 single DICOM slice (55% height)",
+  "ground_truth": "ICH present in scan (3/3 readers); this slice may or may not show it",
+  "expect": {
+   "modality": "head_ct"
+  }
+ },
+ "cq500_131_no_ich_slice.dcm": {
+  "source": "CQ500 (Chilamkurthy et al., Lancet 2018; qure.ai) via HF neurosentry/cq500 \u2013 CC BY-NC-SA 4.0 \u2013 single DICOM slice (55% height)",
+  "ground_truth": "no ICH (3/3 readers)",
+  "expect": {
+   "modality": "head_ct"
+  }
+ },
+ "cq500_film_ich_342.png": {
+  "source": "CQ500 (Chilamkurthy et al., Lancet 2018; qure.ai) via HF neurosentry/cq500 \u2013 CC BY-NC-SA 4.0 \u2013 4x4 film montage (brain window)",
+  "ground_truth": "ICH (scan-level majority of 3 radiologists)",
+  "expect": {
+   "modality": "head_ct"
+  }
+ },
+ "phone_sim_cq500_film_ich_342.jpg": {
+  "source": "CQ500 (Chilamkurthy et al., Lancet 2018; qure.ai) via HF neurosentry/cq500 \u2013 CC BY-NC-SA 4.0 \u2013 PhotoShift-IN simulated phone photo of the film on a lightbox",
+  "ground_truth": "ICH (scan-level)",
+  "expect": {
+   "modality": "head_ct",
+   "quality": "PASS"
+  }
+ },
+ "cq500_film_no_ich_361.png": {
+  "source": "CQ500 (Chilamkurthy et al., Lancet 2018; qure.ai) via HF neurosentry/cq500 \u2013 CC BY-NC-SA 4.0 \u2013 4x4 film montage (brain window)",
+  "ground_truth": "no ICH (scan-level majority of 3 radiologists)",
+  "expect": {
+   "modality": "head_ct"
+  }
+ },
+ "phone_sim_cq500_film_no_ich_361.jpg": {
+  "source": "CQ500 (Chilamkurthy et al., Lancet 2018; qure.ai) via HF neurosentry/cq500 \u2013 CC BY-NC-SA 4.0 \u2013 PhotoShift-IN simulated phone photo of the film on a lightbox",
+  "ground_truth": "no ICH (scan-level)",
+  "expect": {
+   "modality": "head_ct",
+   "quality": "PASS"
+  }
+ },
+ "real_phone_photo_cxr_abnormal.jpg": {
+  "source": "CheXphoto (Phillips et al. 2020) via Zenodo 12723955 (CC BY 4.0 rehost); labels: CheXpert validation radiologist consensus \u2013 REAL OnePlus photo of a monitor",
+  "ground_truth": "abnormal: Cardiomegaly, Lung Opacity, Enlarged Cardiomediastinum",
+  "expect": {
+   "modality": "chest_xray"
+  }
+ },
+ "real_phone_photo_cxr_normal.jpg": {
+  "source": "CheXphoto (Phillips et al. 2020) via Zenodo 12723955 (CC BY 4.0 rehost); labels: CheXpert validation radiologist consensus \u2013 REAL OnePlus photo of a monitor",
+  "ground_truth": "No Finding",
+  "expect": {
+   "modality": "chest_xray"
+  }
+ },
+ "shenzhen_cxr_normal.png": {
+  "source": "NLM Shenzhen/Montgomery TB CXR sets (Jaeger et al. 2014) \u2013 public, cite source \u2013 digital PNG (downscaled to 1024 px)",
+  "ground_truth": "normal",
+  "expect": {
+   "modality": "chest_xray",
+   "quality": "PASS"
+  }
+ },
+ "phone_sim_blurry_cxr.jpg": {
+  "source": "NLM Shenzhen/Montgomery TB CXR sets (Jaeger et al. 2014) \u2013 public, cite source \u2013 PhotoShift-IN render with SEVERE motion blur",
+  "ground_truth": "normal; capture should be rejected",
+  "expect": {
+   "quality": "RETAKE"
+  }
+ },
+ "cxr_with_synthetic_phi.png": {
+  "source": "NLM Shenzhen/Montgomery TB CXR sets (Jaeger et al. 2014) \u2013 public, cite source \u2013 with SYNTHETIC name/UHID/date/hospital text burnt in (fake identities)",
+  "ground_truth": "normal; 4 PHI lines must be blurred",
+  "expect": {
+   "modality": "chest_xray",
+   "phi_boxes": [
+    [
+     30,
+     41,
+     193,
+     22
+    ],
+    [
+     30,
+     968,
+     181,
+     26
+    ],
+    [
+     559,
+     40,
+     187,
+     23
+    ],
+    [
+     508,
+     975,
+     170,
+     19
+    ]
+   ]
+  }
+ },
+ "shenzhen_cxr_tb.png": {
+  "source": "NLM Shenzhen/Montgomery TB CXR sets (Jaeger et al. 2014) \u2013 public, cite source \u2013 digital PNG (downscaled to 1024 px)",
+  "ground_truth": "TB",
+  "expect": {
+   "modality": "chest_xray",
+   "quality": "PASS"
+  }
+ },
+ "brain_mri.jpg": {
+  "source": "Brain Tumor MRI Dataset (Nickparvar, Kaggle; HF mirror BJyotibrat/...) \u2013 held-out",
+  "ground_truth": "glioma",
+  "expect": {
+   "modality": "brain_mri"
+  }
+ },
+ "not_medical.jpg": {
+  "source": "Imagenette (fast.ai, ImageNet subset) \u2013 held-out",
+  "ground_truth": "not a medical image",
+  "expect": {
+   "modality": "non_medical"
+  }
+ }
+}
