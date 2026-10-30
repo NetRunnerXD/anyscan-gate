@@ -1,0 +1,444 @@
+{
+ "cxr": {
+  "operating_points": {
+   "lo": 0.2015,
+   "hi": 0.7677,
+   "rule": "lo: sensitivity>=0.90, hi: specificity>=0.90 on calibration split"
+  },
+  "shenzhen_tb_test": {
+   "n": 332,
+   "n_pos": 167,
+   "auc": 0.8856,
+   "sens_at_hi": 0.4311,
+   "spec_at_hi": 0.9879,
+   "sens_at_lo": 0.9341,
+   "spec_at_lo": 0.5576,
+   "coverage_non_abstained": 0.5331,
+   "sens_non_abstained": 0.8675,
+   "spec_non_abstained": 0.9787,
+   "acc_non_abstained": 0.9266,
+   "auc_95ci": [
+    0.8476,
+    0.9197
+   ]
+  },
+  "montgomery_tb_test": {
+   "n": 60,
+   "n_pos": 26,
+   "auc": 0.9005,
+   "sens_at_hi": 0.6538,
+   "spec_at_hi": 0.9412,
+   "sens_at_lo": 0.8462,
+   "spec_at_lo": 0.7353,
+   "coverage_non_abstained": 0.8,
+   "sens_non_abstained": 0.8095,
+   "spec_non_abstained": 0.9259,
+   "acc_non_abstained": 0.875,
+   "auc_95ci": [
+    0.7966,
+    0.9698
+   ]
+  },
+  "nih_cxr14_test": {
+   "n": 2275,
+   "n_pos": 996,
+   "auc": 0.7059,
+   "sens_at_hi": 0.2992,
+   "spec_at_hi": 0.9007,
+   "sens_at_lo": 0.8414,
+   "spec_at_lo": 0.3831,
+   "coverage_non_abstained": 0.4716,
+   "sens_non_abstained": 0.6535,
+   "spec_non_abstained": 0.7942,
+   "acc_non_abstained": 0.7344,
+   "auc_95ci": [
+    0.6836,
+    0.7275
+   ]
+  },
+  "tb_sets_combined_test": {
+   "n": 392,
+   "n_pos": 193,
+   "auc": 0.8862,
+   "sens_at_hi": 0.4611,
+   "spec_at_hi": 0.9799,
+   "sens_at_lo": 0.9223,
+   "spec_at_lo": 0.5879,
+   "coverage_non_abstained": 0.574,
+   "sens_non_abstained": 0.8558,
+   "spec_non_abstained": 0.9669,
+   "acc_non_abstained": 0.9156,
+   "auc_95ci": [
+    0.8521,
+    0.9185
+   ]
+  },
+  "chexpert_valid_digital": {
+   "n": 134,
+   "n_pos": 114,
+   "auc": 0.7434,
+   "sens_at_hi": 0.8421,
+   "spec_at_hi": 0.55,
+   "sens_at_lo": 0.9737,
+   "spec_at_lo": 0.0,
+   "coverage_non_abstained": 0.806,
+   "sens_non_abstained": 0.9697,
+   "spec_non_abstained": 0.0,
+   "acc_non_abstained": 0.8889,
+   "auc_95ci": [
+    0.6195,
+    0.8616
+   ]
+  },
+  "chexphoto_real_phone_photos": {
+   "n": 134,
+   "n_pos": 114,
+   "auc": 0.9004,
+   "sens_at_hi": 0.6228,
+   "spec_at_hi": 1.0,
+   "sens_at_lo": 0.8333,
+   "spec_at_lo": 0.75,
+   "coverage_non_abstained": 0.7836,
+   "sens_non_abstained": 0.7889,
+   "spec_non_abstained": 1.0,
+   "acc_non_abstained": 0.819,
+   "auc_95ci": [
+    0.831,
+    0.9516
+   ]
+  },
+  "chexphoto_synthetic_photographic": {
+   "n": 134,
+   "n_pos": 114,
+   "auc": 0.6539,
+   "sens_at_hi": 0.9211,
+   "spec_at_hi": 0.25,
+   "sens_at_lo": 0.9912,
+   "spec_at_lo": 0.0,
+   "coverage_non_abstained": 0.903,
+   "sens_non_abstained": 0.9906,
+   "spec_non_abstained": 0.0,
+   "acc_non_abstained": 0.8678,
+   "auc_95ci": [
+    0.4972,
+    0.8079
+   ]
+  },
+  "chexphoto_flip_rate_digital_vs_real_photo": 0.3582,
+  "chexphoto_real_photo_quality_pass_rate": 0.7164,
+  "chexphoto_real_photo_modality_correct": 1.0,
+  "chexphoto_real_photos_PASS_only": {
+   "n": 96,
+   "n_pos": 89,
+   "auc": 0.9294,
+   "sens_at_hi": 0.764,
+   "spec_at_hi": 1.0,
+   "sens_at_lo": 0.9663,
+   "spec_at_lo": 0.2857,
+   "coverage_non_abstained": 0.7604,
+   "sens_non_abstained": 0.9577,
+   "spec_non_abstained": 1.0,
+   "acc_non_abstained": 0.9589
+  },
+  "chexphoto_real_photos_RETAKE_only": {
+   "n": 38,
+   "n_pos": 25,
+   "auc": 0.8031,
+   "sens_at_hi": 0.12,
+   "spec_at_hi": 1.0,
+   "sens_at_lo": 0.36,
+   "spec_at_lo": 1.0,
+   "coverage_non_abstained": 0.8421,
+   "sens_non_abstained": 0.1579,
+   "spec_non_abstained": 1.0,
+   "acc_non_abstained": 0.5
+  }
+ },
+ "quality": {
+  "n": 280,
+  "agreement": 0.7679,
+  "retake_recall": 1.0,
+  "pass_recall": 0.6286,
+  "retake_rate_by_degradation": {
+   "blur:mild": 0.633,
+   "blur:severe": 1.0,
+   "dark:mild": 0.882,
+   "dark:severe": 1.0,
+   "glare:mild": 0.37,
+   "glare:severe": 1.0,
+   "jpeg:mild": 0.455,
+   "jpeg:severe": 1.0,
+   "lowres:mild": 0.19,
+   "lowres:severe": 1.0,
+   "moire:mild": 0.0,
+   "none:clean": 0.113,
+   "tilt:mild": 0.0,
+   "tilt:severe": 0.0
+  },
+  "thresholds": {
+   "thresholds": {
+    "blur_retake": 7.497,
+    "glare_retake": 0.02517621912025414,
+    "block_retake": 2.5925000000000002,
+    "min_side_retake": 480.0,
+    "dark_retake": 23.51107889682611
+   },
+   "fitted_on": "PhotoShift-IN calibration split, 280 simulated captures of real train-pool images",
+   "note": "min_side capped at 480 px so native 512-px CT/MRI exports pass"
+  }
+ },
+ "phi": {
+  "n_images": 160,
+  "n_text_lines": 640,
+  "recall_digital": 0.8938,
+  "recall_phone_sim": 0.8703,
+  "images_with_all_lines_redacted_digital": 0.7,
+  "images_with_all_lines_redacted_phone_sim": 0.6375,
+  "over_redaction_area_frac_mean": 0.0166,
+  "blurred_area_frac_on_clean_images_mean": 0.0053,
+  "note": "Real held-out images with SYNTHETIC rendered PHI text (names/UHID/date/hospital); public data contains no real PHI."
+ },
+ "film": {
+  "n": 160,
+  "detected": 0.9688,
+  "iou_mean": 0.6727,
+  "iou_gt_0.8": 0.5813,
+  "note": "Simulated captures (known film quad) of real held-out images on lightbox/table/monitor backgrounds."
+ },
+ "ich": {
+  "model": {
+   "arch": "resnet18",
+   "input": "8-bit brain window W80/L40, letterboxed 224, ImageNet norm, gray->RGB",
+   "train_data": "RSNA Intracranial Hemorrhage Detection (HF ianpan/rsna-intracranial-hemorrhage-16bit-png subset)",
+   "train_slices": 44182,
+   "val_slices": 6935,
+   "val_patients": 179,
+   "val_slice_auc": 0.9406512148393188,
+   "val_series_auc": 0.9313786008230452,
+   "platt": [
+    0.7907842993736267,
+    -1.385961890220642
+   ],
+   "epochs": 3
+  },
+  "operating_points": {
+   "lo": 0.2296,
+   "hi": 0.5564,
+   "rule": "RSNA validation series-level: lo = sensitivity>=0.95, hi = specificity>=0.9"
+  },
+  "rsna_heldout_slices": {
+   "n": 6935,
+   "n_pos": 986,
+   "auc": 0.9407,
+   "sens_at_hi": 0.5801,
+   "spec_at_hi": 0.9834,
+   "sens_at_lo": 0.7992,
+   "spec_at_lo": 0.9213,
+   "coverage_non_abstained": 0.9156,
+   "sens_non_abstained": 0.7429,
+   "spec_non_abstained": 0.9823,
+   "acc_non_abstained": 0.9532
+  },
+  "rsna_heldout_series": {
+   "n": 201,
+   "n_pos": 81,
+   "auc": 0.9314,
+   "sens_at_hi": 0.7901,
+   "spec_at_hi": 0.9083,
+   "sens_at_lo": 0.9506,
+   "spec_at_lo": 0.675,
+   "coverage_non_abstained": 0.796,
+   "sens_non_abstained": 0.9412,
+   "spec_non_abstained": 0.8804,
+   "acc_non_abstained": 0.9062
+  },
+  "cq500_all_slices": {
+   "n": 472,
+   "n_pos": 197,
+   "auc": 0.8983,
+   "sens_at_hi": 0.7766,
+   "spec_at_hi": 0.8727,
+   "sens_at_lo": 0.9137,
+   "spec_at_lo": 0.5491,
+   "coverage_non_abstained": 0.7542,
+   "sens_non_abstained": 0.9,
+   "spec_non_abstained": 0.8118,
+   "acc_non_abstained": 0.8539,
+   "auc_95ci": [
+    0.868,
+    0.9274
+   ]
+  },
+  "cq500_film_montage_digital": {
+   "n": 472,
+   "n_pos": 197,
+   "auc": 0.9001,
+   "sens_at_hi": 0.7665,
+   "spec_at_hi": 0.8945,
+   "sens_at_lo": 0.9188,
+   "spec_at_lo": 0.5745,
+   "coverage_non_abstained": 0.75,
+   "sens_non_abstained": 0.9042,
+   "spec_non_abstained": 0.8449,
+   "acc_non_abstained": 0.8729,
+   "auc_95ci": [
+    0.8698,
+    0.9296
+   ]
+  },
+  "cq500_film_montage_phone_sim": {
+   "n": 472,
+   "n_pos": 197,
+   "auc": 0.8557,
+   "sens_at_hi": 0.7056,
+   "spec_at_hi": 0.8655,
+   "sens_at_lo": 0.8985,
+   "spec_at_lo": 0.5455,
+   "coverage_non_abstained": 0.7331,
+   "sens_non_abstained": 0.8742,
+   "spec_non_abstained": 0.8021,
+   "acc_non_abstained": 0.8353,
+   "auc_95ci": [
+    0.8205,
+    0.8911
+   ]
+  },
+  "cq500_phone_sim_pass_only": {
+   "n": 371,
+   "n_pos": 153,
+   "auc": 0.8734,
+   "sens_at_hi": 0.7516,
+   "spec_at_hi": 0.8716,
+   "sens_at_lo": 0.9085,
+   "spec_at_lo": 0.5505,
+   "coverage_non_abstained": 0.7466,
+   "sens_non_abstained": 0.8915,
+   "spec_non_abstained": 0.8108,
+   "acc_non_abstained": 0.8484
+  },
+  "cq500_flip_rate_digital_vs_phone": 0.1017,
+  "cq500_n_scans": 472
+ },
+ "modality": {
+  "digital": {
+   "n": 959,
+   "accuracy": 0.9958,
+   "per_class_recall": {
+    "chest_xray": 1.0,
+    "head_ct": 1.0,
+    "brain_mri": 0.985,
+    "other_xray": 0.9937,
+    "non_medical": 1.0
+   },
+   "confusion": [
+    [
+     200,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     200,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     3,
+     197,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     158,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     200
+    ]
+   ],
+   "mean_conf_correct": 0.9934,
+   "frac_below_0.8_conf": 0.0073
+  },
+  "phone_sim": {
+   "n": 959,
+   "accuracy": 0.9604,
+   "per_class_recall": {
+    "chest_xray": 1.0,
+    "head_ct": 0.945,
+    "brain_mri": 0.895,
+    "other_xray": 0.9623,
+    "non_medical": 1.0
+   },
+   "confusion": [
+    [
+     200,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     189,
+     11,
+     0,
+     0
+    ],
+    [
+     0,
+     21,
+     179,
+     0,
+     0
+    ],
+    [
+     2,
+     4,
+     0,
+     153,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0,
+     200
+    ]
+   ],
+   "mean_conf_correct": 0.9614,
+   "frac_below_0.8_conf": 0.1397
+  },
+  "cq500_montage_phone_sim_head_ct_recall": 0.9333,
+  "classes": [
+   "chest_xray",
+   "head_ct",
+   "brain_mri",
+   "other_xray",
+   "non_medical"
+  ],
+  "sources": {
+   "chest_xray": "NIH/Shenzhen/Montgomery held-out half",
+   "head_ct": "CQ500 (external, not used in training)",
+   "brain_mri": "brain-tumour MRI set, 30% held-out",
+   "other_xray": "fracture X-ray set, 30% held-out",
+   "non_medical": "Imagenette, 30% held-out"
+  }
+ },
+ "runtime": {
+  "seconds_per_image_mean": 1.1,
+  "cpu": 8,
+  "note": "end-to-end incl. OCR redaction + Grad-CAM, warm models"
+ }
+}
