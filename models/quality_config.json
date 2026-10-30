@@ -1,0 +1,11 @@
+{
+ "thresholds": {
+  "blur_retake": 7.497,
+  "glare_retake": 0.02517621912025414,
+  "block_retake": 2.5925000000000002,
+  "min_side_retake": 480.0,
+  "dark_retake": 23.51107889682611
+ },
+ "fitted_on": "PhotoShift-IN calibration split, 280 simulated captures of real train-pool images",
+ "note": "min_side capped at 480 px so native 512-px CT/MRI exports pass"
+}
